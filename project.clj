@@ -1,4 +1,4 @@
-(defproject korma "0.5.0-RC1"
+(defproject korma "0.5.1-RC1"
   :description "Tasty SQL for Clojure"
   :url "http://github.com/korma/Korma"
   :license {:name "Eclipse Public License"
@@ -15,7 +15,8 @@
                  [com.mchange/c3p0 "0.9.5.2"]
                  [org.clojure/java.jdbc "0.6.1"]]
 
-  :min-lein-version "2.0.0"
+  :min-lein-version "2.0.1"
+  ;:min-lein-version "2.0.0"
 
   :profiles {:dev {:dependencies [[gui-diff "0.6.6"]
                                   [postgresql "9.3-1102.jdbc41"]
