@@ -415,8 +415,8 @@
   (bind-params
    (case (:type query)
      :union (-> query sql-union sql-order)
-     :union-all (-> query sql-union-all sql-order)
-     :intersect (-> query sql-intersect sql-order)
+     :union-all (-> query sql-union-all sql-order sql-limit-offset)
+     :intersect (-> query sql-intersect sql-order sql-limit-offset)
      :select (-> query
                  sql-select
                  sql-joins
